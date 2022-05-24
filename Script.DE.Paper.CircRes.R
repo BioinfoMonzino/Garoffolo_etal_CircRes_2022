@@ -4,7 +4,7 @@
 ###       by interfering with YAP-dependent transcriptional activation"                             ###
 #######################################################################################################
 
-# Note: Rawcount matrix amd metadata were deposited @ GSEXXXXXX
+# Note: Rawcount matrix amd metadata were deposited @ GSE203358
 
 #######################################################################################################
 
