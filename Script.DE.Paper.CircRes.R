@@ -4,7 +4,7 @@
 ###       by interfering with YAP-dependent transcriptional activation"                             ###
 #######################################################################################################
 
-# Note: Rawcount matrix amd metadata were deposited @ GSE203358
+# Note: Rawcount matrix amd metadata were deposited @ GEO with accession: GSE203358
 
 #######################################################################################################
 
@@ -31,7 +31,7 @@ metadata <- read.delim("User_Directory/metadata.txt", stringsAsFactors=TRUE)
 ###############################################################
 ###############        Data Preprocessing       ###############
 ###############################################################
-## Removed genes with 5 counts in at least 25% of samples (i.e. 6 samples):
+## Retain genes with 5 counts in at least 25% of samples (i.e. 6 samples):
 idx <- rowSums(Raw_Counts>5) >= 6
 Raw_Counts_filt <- Raw_Counts[idx,]
 
